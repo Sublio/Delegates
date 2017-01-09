@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  DMPatient.h
 //  DelegatesTest
 //
 //  Created by Denis Mordvinov on 09.01.17.
 //  Copyright © 2017 Rosberry. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@interface DMPatient : NSObject
 
 @end
-
