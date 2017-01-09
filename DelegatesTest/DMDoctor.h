@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DMPatient.h"
 
-@interface DMDoctor : NSObject
+@protocol DMPatientDelegate;
+
+
+@interface DMDoctor : NSObject <DMPatientDelegate>
+
+
 
 @end

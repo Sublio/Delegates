@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DMDoctor.h"
+#import "DMPatient.h"
 
 @interface AppDelegate ()
 
@@ -16,20 +18,40 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    DMPatient *patient1 = [[DMPatient alloc] init];
+    patient1.name = @"Vova";
+    patient1.temperature = 36.6f;
+    
+    
+    
+    DMPatient *patient2 = [[DMPatient alloc] init];
+    patient2.name = @"Petya";
+    patient2.temperature = 40.2f;
+    
+    
+    DMDoctor *doctor = [[DMDoctor alloc] init];
+    
+    patient1.delegate = doctor;
+    patient2.delegate = doctor;
+    
+    
+    
+    [patient1 howAreYou];
+    [patient2 howAreYou];
+    
     return YES;
 }
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
 }
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+   
 }
 
 

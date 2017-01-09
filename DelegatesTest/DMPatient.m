@@ -10,4 +10,29 @@
 
 @implementation DMPatient
 
+-(void)takePill{
+    
+    
+    NSLog(@"Patient %@ takes pill", self.name);
+    
+}
+-(void)makeShot{
+    
+    NSLog(@"Patient %@ makes shot", self.name);
+    
+}
+
+-(BOOL)howAreYou{
+    
+    
+    BOOL iFeelGood = arc4random() %2;
+    
+    if (!iFeelGood){
+        
+        [self.delegate patientFeelsBad:self];
+    }
+    
+    return iFeelGood;
+}
+
 @end

@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		4C3B3DB41E23B626006DDFDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B3DB31E23B626006DDFDF /* main.m */; };
 		4C3B3DB71E23B626006DDFDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B3DB61E23B626006DDFDF /* AppDelegate.m */; };
-		4C3B3DBA1E23B626006DDFDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B3DB91E23B626006DDFDF /* ViewController.m */; };
 		4C3B3DBD1E23B626006DDFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B3DBB1E23B626006DDFDF /* Main.storyboard */; };
 		4C3B3DBF1E23B626006DDFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B3DBE1E23B626006DDFDF /* Assets.xcassets */; };
 		4C3B3DC21E23B626006DDFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B3DC01E23B626006DDFDF /* LaunchScreen.storyboard */; };
+		4C3B3DCB1E23BA21006DDFDF /* DMPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B3DCA1E23BA21006DDFDF /* DMPatient.m */; };
+		4C3B3DCE1E23BDE2006DDFDF /* DMDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B3DCD1E23BDE2006DDFDF /* DMDoctor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		4C3B3DB31E23B626006DDFDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C3B3DB51E23B626006DDFDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C3B3DB61E23B626006DDFDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4C3B3DB81E23B626006DDFDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4C3B3DB91E23B626006DDFDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4C3B3DBC1E23B626006DDFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C3B3DBE1E23B626006DDFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C3B3DC11E23B626006DDFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C3B3DC31E23B626006DDFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3B3DC91E23BA21006DDFDF /* DMPatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPatient.h; sourceTree = "<group>"; };
+		4C3B3DCA1E23BA21006DDFDF /* DMPatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPatient.m; sourceTree = "<group>"; };
+		4C3B3DCC1E23BDE2006DDFDF /* DMDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDoctor.h; sourceTree = "<group>"; };
+		4C3B3DCD1E23BDE2006DDFDF /* DMDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDoctor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,12 @@
 		4C3B3DB11E23B626006DDFDF /* DelegatesTest */ = {
 			isa = PBXGroup;
 			children = (
+				4C3B3DC91E23BA21006DDFDF /* DMPatient.h */,
+				4C3B3DCA1E23BA21006DDFDF /* DMPatient.m */,
+				4C3B3DCC1E23BDE2006DDFDF /* DMDoctor.h */,
+				4C3B3DCD1E23BDE2006DDFDF /* DMDoctor.m */,
 				4C3B3DB51E23B626006DDFDF /* AppDelegate.h */,
 				4C3B3DB61E23B626006DDFDF /* AppDelegate.m */,
-				4C3B3DB81E23B626006DDFDF /* ViewController.h */,
-				4C3B3DB91E23B626006DDFDF /* ViewController.m */,
 				4C3B3DBB1E23B626006DDFDF /* Main.storyboard */,
 				4C3B3DBE1E23B626006DDFDF /* Assets.xcassets */,
 				4C3B3DC01E23B626006DDFDF /* LaunchScreen.storyboard */,
@@ -151,9 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C3B3DBA1E23B626006DDFDF /* ViewController.m in Sources */,
 				4C3B3DB71E23B626006DDFDF /* AppDelegate.m in Sources */,
+				4C3B3DCE1E23BDE2006DDFDF /* DMDoctor.m in Sources */,
 				4C3B3DB41E23B626006DDFDF /* main.m in Sources */,
+				4C3B3DCB1E23BA21006DDFDF /* DMPatient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
